@@ -1,0 +1,188 @@
+Script started on 2025-02-19 04:20:59+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="110" LINES="22"]
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ sbcl --sci[Kript mergesort.lisp 
+
+(1 2 3 3 4 5 5) [0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ touch run_bottom_up_mergesort.sh
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ touch run_insert_sort.sh
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ toui[Kch run_mergesort.sh
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ cho[Kmod run[K[K[K[K[K[K[K[K[Kchmod +x run_bottom_up_mergesort.sh
+nsert_sort.sh
+chmod +x run_mergesort.sh[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ chmod +x run_insert_sort.sh
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ chmod +x run_mergesort.sh[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kchmod +x run_bottom_up_mergesort.sh
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ chmod +x run_insert_sort.sh
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ chmod +x run_mergesort.sh
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ code run_bottom_up_mergesort.sh
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ code run_bottom_up_mergesort.sh
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ #!/bin/bash
+sort Lisp program
+
+echo "Running bottom-up mergesort..."
+sbcl --script bottom-up-lisp.lisp
+
+echo "Sc[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ # This script runs the bottom-up mergesort Lisp program
+ript completed."[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ echo "Running bottom-up mergesort..."
+Running bottom-up mergesort...
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ sbcl --script bottom-up-lisp.lisp
+Unhandled SB-INT:SIMPLE-FILE-ERROR in thread #<SB-THREAD:THREAD "main thread" RUNNING
+                                                {9461061}>:
+  error opening #P"/workspaces/csci-330-homeworks-TAbdisalan/Hwork3/bottom-up-lisp.lisp":
+    No such file or directory
+
+Backtrace for: #<SB-THREAD:THREAD "main thread" RUNNING {9461061}>
+0: (SB-DEBUG::DEBUGGER-DISABLED-HOOK #<SB-INT:SIMPLE-FILE-ERROR "~@<~?: ~2I~_~A~:>" {9F756A9}> #<unused argument> :QUIT T)
+1: (SB-DEBUG::RUN-HOOK *INVOKE-DEBUGGER-HOOK* #<SB-INT:SIMPLE-FILE-ERROR "~@<~?: ~2I~_~A~:>" {9F756A9}>)
+2: (INVOKE-DEBUGGER #<SB-INT:SIMPLE-FILE-ERROR "~@<~?: ~2I~_~A~:>" {9F756A9}>)
+3: (ERROR SB-INT:SIMPLE-FILE-ERROR :PATHNAME #P"/workspaces/csci-330-homeworks-TAbdisalan/Hwork3/bottom-up-lisp.lisp" :FORMAT-CONTROL "~@<~?: ~2I~_~A~:>" :FORMAT-ARGUMENTS ("error opening ~S" (#P"/workspaces/csci-330-homeworks-TAbdisalan/Hwork3/bottom-up-lisp.lisp") "No such file or directory"))
+4: ((FLET SB-IMPL::VANILLA-OPEN-ERROR :IN OPEN))
+5: (OPEN #P"bottom-up-lisp.lisp" :DIRECTION :INPUT :ELEMENT-TYPE :DEFAULT :IF-EXISTS NIL :IF-DOES-NOT-EXIST NIL :EXTERNAL-FORMAT :DEFAULT :CLASS SB-SYS:FD-STREAM)
+6: ((FLET SB-UNIX::BODY :IN SB-IMPL::PROCESS-SCRIPT))
+7: ((FLET "WITHOUT-INTERRUPTS-BODY-3" :IN SB-IMPL::PROCESS-SCRIPT))
+8: (SB-IMPL::PROCESS-SCRIPT "bottom-up-lisp.lisp")
+9: (SB-IMPL::TOPLEVEL-INIT)
+10: ((FLET SB-UNIX::BODY :IN SAVE-LISP-AND-DIE))
+11: ((FLET "WITHOUT-INTERRUPTS-BODY-27" :IN SAVE-LISP-AND-DIE))
+12: ((LABELS SB-IMPL::RESTART-LISP :IN SAVE-LISP-AND-DIE))
+
+unhandled condition in --disable-debugger mode, quitting
+[0;32m@TAbdisalan [1;31m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@TAbdisalan [1;31m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ echo "Script completed."
+Script completed.
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ code run_insert_sort.sh
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ #!/bin/bash
+Lisp program
+
+echo "Running insertion sort..."
+sbcl --script insert-sort.lisp
+
+echo "Script complete[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ # This script runs the insertion sort Lisp program
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ echo "Running insertion sort..."
+Running insertion sort...
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ sbcl --script insert-sort.lisp
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ echo "Script completed."
+Script completed.
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ code run_mergesort.sh
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ #!/bin/bash
+program
+
+echo "Running mergesort..."
+sbcl --script mergesort.lisp
+
+echo "Script completed."[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ # This script runs the mergesort Lisp program
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ echo "Running mergesort..."
+Running mergesort...
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ sbcl --script mergesort.lisp
+
+(1 2 3 3 4 5 5) [0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ echo "Script completed."
+Script completed.
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ ./run_bottom_up_mergesort.sh
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ ./run_insert_sort.sh
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ ./run_mergesort.sh
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ git add run_bottom_up_mergesort.sh run_insert_sort.sh run_mergesort.sh
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ git commit -m "Added script files for running Lisp programs"
+[main 0c19713] Added script files for running Lisp programs
+ 95 files changed, 10307 insertions(+)
+ create mode 100644 Hwork1/Q1.pdf
+ create mode 100644 Hwork2/myscript
+ create mode 100755 Hwork3/run_bottom_up_mergesort.sh
+ create mode 100755 Hwork3/run_insert_sort.sh
+ create mode 100755 Hwork3/run_mergesort.sh
+ create mode 100644 out.tar.bz2
+ create mode 100644 sbcl-1.4.3-x86-linux/BUGS
+ create mode 100644 sbcl-1.4.3-x86-linux/COPYING
+ create mode 100644 sbcl-1.4.3-x86-linux/CREDITS
+ create mode 100644 sbcl-1.4.3-x86-linux/INSTALL
+ create mode 100644 sbcl-1.4.3-x86-linux/NEWS
+ create mode 100644 sbcl-1.4.3-x86-linux/README
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/asdf-module.mk
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/asdf/Makefile
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/sb-aclrepl/Makefile
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/sb-bsd-sockets/Makefile
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/sb-cltl2/Makefile
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/sb-concurrency/Makefile
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/sb-cover/Makefile
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/sb-executable/Makefile
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/sb-gmp/Makefile
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/sb-grovel/Makefile
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/sb-introspect/Makefile
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/sb-md5/Makefile
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/sb-mpfr/Makefile
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/sb-posix/Makefile
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/sb-queue/Makefile
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/sb-rotate-byte/Makefile
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/sb-rt/Makefile
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/sb-simple-streams/Makefile
+ create mode 100644 sbcl-1.4.3-x86-linux/contrib/sb-sprof/Makefile
+ create mode 100644 sbcl-1.4.3-x86-linux/doc/sbcl.1
+ create mode 100644 sbcl-1.4.3-x86-linux/find-gnumake.sh
+ create mode 100755 sbcl-1.4.3-x86-linux/install.sh
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/asdf-cache/asdf/test-passed.test-report
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/asdf-cache/sb-aclrepl/test-passed.test-report
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/asdf-cache/sb-bsd-sockets/test-passed.test-report
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/asdf-cache/sb-cltl2/test-passed.test-report
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/asdf-cache/sb-concurrency/test-passed.test-report
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/asdf-cache/sb-cover/test-passed.test-report
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/asdf-cache/sb-executable/test-passed.test-report
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/asdf-cache/sb-gmp/test-passed.test-report
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/asdf-cache/sb-grovel/test-passed.test-report
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/asdf-cache/sb-introspect/test-passed.test-report
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/asdf-cache/sb-md5/test-passed.test-report
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/asdf-cache/sb-mpfr/test-passed.test-report
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/asdf-cache/sb-posix/test-passed.test-report
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/asdf-cache/sb-queue/test-passed.test-report
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/asdf-cache/sb-rotate-byte/test-passed.test-report
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/asdf-cache/sb-rt/test-passed.test-report
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/asdf-cache/sb-simple-streams/test-passed.test-report
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/asdf-cache/sb-sprof/test-passed.test-report
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/asdf.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-aclrepl.asd
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-aclrepl.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-bsd-sockets.asd
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-bsd-sockets.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-cltl2.asd
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-cltl2.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-concurrency.asd
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-concurrency.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-cover.asd
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-cover.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-executable.asd
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-executable.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-gmp.asd
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-gmp.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-grovel.asd
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-grovel.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-introspect.asd
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-introspect.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-md5.asd
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-md5.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-mpfr.asd
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-mpfr.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-posix.asd
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-posix.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-queue.asd
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-queue.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-rotate-byte.asd
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-rotate-byte.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-rt.asd
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-rt.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-simple-streams.asd
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-simple-streams.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-sprof.asd
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/sb-sprof.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/obj/sbcl-home/contrib/uiop.fasl
+ create mode 100644 sbcl-1.4.3-x86-linux/output/prefix.def
+ create mode 100644 sbcl-1.4.3-x86-linux/output/sbcl.core
+ create mode 100644 sbcl-1.4.3-x86-linux/pubring.pgp
+ create mode 100755 sbcl-1.4.3-x86-linux/run-sbcl.sh
+ create mode 100644 sbcl-1.4.3-x86-linux/sbcl-pwd.sh
+ create mode 100755 sbcl-1.4.3-x86-linux/src/runtime/sbcl
+ create mode 100644 sbcl-1.4.3-x86-linux/src/runtime/sbcl.mk
+[0;32m@TAbdisalan [0m➜ [1;34m/workspaces/csci-330-homeworks-TAbdisalan/Hwork3 [0;36m([1;31mmain[0;36m) [0m$ git push origin main
+Enumerating objects: 109, done.
+Counting objects:   0% (1/109)Counting objects:   1% (2/109)Counting objects:   2% (3/109)Counting objects:   3% (4/109)Counting objects:   4% (5/109)Counting objects:   5% (6/109)Counting objects:   6% (7/109)Counting objects:   7% (8/109)Counting objects:   8% (9/109)Counting objects:   9% (10/109)Counting objects:  10% (11/109)Counting objects:  11% (12/109)Counting objects:  12% (14/109)Counting objects:  13% (15/109)Counting objects:  14% (16/109)Counting objects:  15% (17/109)Counting objects:  16% (18/109)Counting objects:  17% (19/109)Counting objects:  18% (20/109)Counting objects:  19% (21/109)Counting objects:  20% (22/109)Counting objects:  21% (23/109)Counting objects:  22% (24/109)Counting objects:  23% (26/109)Counting objects:  24% (27/109)Counting objects:  25% (28/109)Counting objects:  26% (29/109)Counting objects:  27% (30/109)Counting objects:  28% (31/109)Counting objects:  29% (32/109)Counting objects:  30% (33/109)Counting objects:  31% (34/109)Counting objects:  32% (35/109)Counting objects:  33% (36/109)Counting objects:  34% (38/109)Counting objects:  35% (39/109)Counting objects:  36% (40/109)Counting objects:  37% (41/109)Counting objects:  38% (42/109)Counting objects:  39% (43/109)Counting objects:  40% (44/109)Counting objects:  41% (45/109)Counting objects:  42% (46/109)Counting objects:  43% (47/109)Counting objects:  44% (48/109)Counting objects:  45% (50/109)Counting objects:  46% (51/109)Counting objects:  47% (52/109)Counting objects:  48% (53/109)Counting objects:  49% (54/109)Counting objects:  50% (55/109)Counting objects:  51% (56/109)Counting objects:  52% (57/109)Counting objects:  53% (58/109)Counting objects:  54% (59/109)Counting objects:  55% (60/109)Counting objects:  56% (62/109)Counting objects:  57% (63/109)Counting objects:  58% (64/109)Counting objects:  59% (65/109)Counting objects:  60% (66/109)Counting objects:  61% (67/109)Counting objects:  62% (68/109)Counting objects:  63% (69/109)Counting objects:  64% (70/109)Counting objects:  65% (71/109)Counting objects:  66% (72/109)Counting objects:  67% (74/109)Counting objects:  68% (75/109)Counting objects:  69% (76/109)Counting objects:  70% (77/109)Counting objects:  71% (78/109)Counting objects:  72% (79/109)Counting objects:  73% (80/109)Counting objects:  74% (81/109)Counting objects:  75% (82/109)Counting objects:  76% (83/109)Counting objects:  77% (84/109)Counting objects:  78% (86/109)Counting objects:  79% (87/109)Counting objects:  80% (88/109)Counting objects:  81% (89/109)Counting objects:  82% (90/109)Counting objects:  83% (91/109)Counting objects:  84% (92/109)Counting objects:  85% (93/109)Counting objects:  86% (94/109)Counting objects:  87% (95/109)Counting objects:  88% (96/109)Counting objects:  89% (98/109)Counting objects:  90% (99/109)Counting objects:  91% (100/109)Counting objects:  92% (101/109)Counting objects:  93% (102/109)Counting objects:  94% (103/109)Counting objects:  95% (104/109)Counting objects:  96% (105/109)Counting objects:  97% (106/109)Counting objects:  98% (107/109)Counting objects:  99% (108/109)Counting objects: 100% (109/109)Counting objects: 100% (109/109), done.
+Delta compression using up to 2 threads
+Compressing objects:   1% (1/54)Compressing objects:   3% (2/54)Compressing objects:   5% (3/54)Compressing objects:   7% (4/54)Compressing objects:   9% (5/54)Compressing objects:  11% (6/54)Compressing objects:  12% (7/54)Compressing objects:  14% (8/54)Compressing objects:  16% (9/54)Compressing objects:  18% (10/54)Compressing objects:  20% (11/54)Compressing objects:  22% (12/54)Compressing objects:  24% (13/54)Compressing objects:  25% (14/54)Compressing objects:  27% (15/54)Compressing objects:  29% (16/54)Compressing objects:  31% (17/54)Compressing objects:  33% (18/54)Compressing objects:  35% (19/54)Compressing objects:  37% (20/54)Compressing objects:  38% (21/54)Compressing objects:  40% (22/54)Compressing objects:  42% (23/54)Compressing objects:  44% (24/54)Compressing objects:  46% (25/54)Compressing objects:  48% (26/54)Compressing objects:  50% (27/54)Compressing objects:  51% (28/54)Compressing objects:  53% (29/54)Compressing objects:  55% (30/54)Compressing objects:  57% (31/54)Compressing objects:  59% (32/54)Compressing objects:  61% (33/54)Compressing objects:  62% (34/54)Compressing objects:  64% (35/54)Compressing objects:  66% (36/54)Compressing objects:  68% (37/54)Compressing objects:  70% (38/54)Compressing objects:  72% (39/54)Compressing objects:  74% (40/54)Compressing objects:  75% (41/54)Compressing objects:  77% (42/54)Compressing objects:  79% (43/54)Compressing objects:  81% (44/54)Compressing objects:  83% (45/54)Compressing objects:  85% (46/54)Compressing objects:  87% (47/54)Compressing objects:  88% (48/54)Compressing objects:  90% (49/54)Compressing objects:  92% (50/54)Compressing objects:  94% (51/54)Compressing objects:  96% (52/54)C
